@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="culture.totalculture.ui.MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主页"
+         />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:textSize="22sp"
+            android:id="@+id/home_page"
+            android:button="null"
+            android:text="首页"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:textSize="22sp"
+            android:id="@+id/record_page"
+            android:button="null"
+            android:text="记录"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:textSize="22sp"
+            android:id="@+id/chat_page"
+            android:button="null"
+            android:text="聊聊"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:textSize="22sp"
+            android:id="@+id/mine_page"
+            android:button="null"
+            android:text="我的"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_above="@id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>
